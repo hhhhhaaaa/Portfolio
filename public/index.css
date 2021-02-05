@@ -1,0 +1,33 @@
+:root {
+    --gold: #daa520;
+}
+
+* {}
+
+nav {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.navContainer {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    min-height: 100px;
+}
+
+.navButton {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    display: flex;
+    width: 20%;
+    height: 100px;
+    flex-grow: 1;
+    border: 3px;
+    border-color: goldenrod;
+    border-style: dashed dashed solid dashed;
+}
