@@ -1,33 +1,68 @@
 :root {
     --gold: #daa520;
+    --black: #000000;
 }
 
-* {}
-
-nav {
+ul {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+    font-size: 30px;
+    background: var(--black);
+    color: var(--gold);
 }
 
-.navContainer {
+p {
+    font-size: 25px;
+    margin: 50px 300px;
+}
+
+.flex {
     align-items: center;
     justify-content: center;
+    text-align: center;
     display: flex;
+}
+
+.border {
+    border: 3px;
+    border-color: goldenrod;
+    border-style: solid;
+}
+
+.container {
     flex-flow: row wrap;
     list-style: none;
     min-height: 100px;
 }
 
+.contactButton {
+    font-size: 20px;
+}
+
 .navButton {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    display: flex;
     width: 20%;
-    height: 100px;
+    height: 150px;
     flex-grow: 1;
-    border: 3px;
-    border-color: goldenrod;
     border-style: dashed dashed solid dashed;
+}
+
+.workButton {
+    height: 150px;
+    width: 49.4%;
+}
+
+.contactButton {
+    height: 150px;
+    width: 32.73%;
+}
+
+.face {
+    width: 24.4%;
+    height: 250px;
+}
+
+.name {
+    width: 74.4%;
+    font-size: 75px;
+    height: 250px;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgba(218, 165, 32, 1) 100%);
 }
