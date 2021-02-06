@@ -10,9 +10,11 @@ ul {
     color: var(--gold);
 }
 
-p {
-    font-size: 25px;
-    margin: 50px 300px;
+a {
+    display: inline;
+    clear: none;
+    color: var(--gold);
+    text-decoration: none;
 }
 
 .flex {
@@ -65,4 +67,14 @@ p {
     font-size: 75px;
     height: 250px;
     background: linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgba(218, 165, 32, 1) 100%);
+}
+
+.aboutText {
+    margin: 50px 300px;
+    font-size: 25px;
+}
+
+.workText {
+    font-size: 30px;
+    margin: 10px;
 }
