@@ -3,6 +3,10 @@
     --black: #000000;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 ul {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
@@ -36,9 +40,6 @@ a {
     min-height: 100px;
 }
 
-.contactButton {
-    font-size: 20px;
-}
 
 .navButton {
     width: 20%;
@@ -49,21 +50,32 @@ a {
 
 .workButton {
     height: 150px;
-    width: 49.4%;
+    width: 49.6%;
+    flex-grow: 1;
+}
+
+.firstWorkButton {
+    height: 500px;
+    width: 75%;
+    flex-grow: 1;
 }
 
 .contactButton {
     height: 150px;
-    width: 32.73%;
+    width: 32.93%;
+    font-size: 20px;
+    flex-grow: 1;
 }
 
 .face {
-    width: 24.4%;
+    width: 24%;
+    max-width: 300px;
+    min-width: 300px;
     height: 250px;
 }
 
 .name {
-    width: 74.4%;
+    width: 79.45%;
     font-size: 75px;
     height: 250px;
     background: linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgba(218, 165, 32, 1) 100%);
@@ -77,4 +89,39 @@ a {
 .workText {
     font-size: 30px;
     margin: 10px;
+    background-color: white;
+}
+
+#horiseon {
+    background-image: url("./final-image.PNG");
+    background-position: center;
+    background-size: cover;
+}
+
+#familyJewels {
+    background-image: url("./cookbook.jfif");
+    background-position: center;
+    background-size: cover;
+}
+
+#talent {
+    background-image: url("./lg.png");
+    background-position: center;
+    background-size: auto;
+}
+
+@media only screen and (max-width: 800px) {
+    .navButton {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navButton {
+        width: 90%
+    }
+
+    .contactButton {
+        font-size: 15px;
+    }
 }
