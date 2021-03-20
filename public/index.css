@@ -6,6 +6,9 @@
 html {
     scroll-behavior: smooth;
 }
+html, body {
+    height: 100%;
+}
 
 ul {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -15,77 +18,59 @@ ul {
 }
 
 a {
-    display: inline;
-    clear: none;
     color: var(--gold);
     text-decoration: none;
 }
 
-.flex {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-}
-
-.border {
-    border: 5px;
-    border-color: goldenrod;
-    border-style: solid;
-}
-
 .container {
-    flex-flow: row wrap;
     list-style: none;
     min-height: 100px;
 }
 
-
 .navButton {
     width: 20%;
     height: 150px;
-    flex-grow: 1;
     border-style: dashed dashed solid dashed;
+}
+
+.face {
+    max-width: 300px;
+    min-width: 300px;
+}
+
+
+.aboutText {
+    font-size: 25px;
+}
+
+.firstWorkButton {
+    height: 500px;
+    width: 50%;
 }
 
 .workButton {
     height: 150px;
     width: 45%;
-    flex-grow: 1;
-}
-
-.firstWorkButton {
-    height: 500px;
-    width: 75%;
-    flex-grow: 1;
 }
 
 .contactButton {
     height: 150px;
-    width: 30%;
+    width: 25%;
     font-size: 20px;
-    flex-grow: 1;
-}
-
-.face {
-    width: 20%;
-    max-width: 300px;
-    min-width: 300px;
-    height: 250px;
-    flex-grow: 1;
 }
 
 .name {
     width: 75%;
-    flex-grow: 3;
     font-size: 75px;
     height: 250px;
     background: linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgba(218, 165, 32, 1) 100%);
 }
 
-.aboutText {
-    margin: 50px 300px;
-    font-size: 25px;
+.firstWorkText {
+    height: 300px;
+    font-size: 30px;
+    margin: 10px;
+    background-color: white;
 }
 
 .workText {

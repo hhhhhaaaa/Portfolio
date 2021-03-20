@@ -5,73 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport">
     <title>Doug Portfolio</title>
-    <link rel="stylesheet" href="public/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="public/index.css" />
 </head>
 
-<body>
-    <nav>
-        <ul class="container flex">
-            <li class="navButton border flex">
-                <a href="#">Douglas Joseph Lubaway</a>
-            </li>
-            <li class="navButton border flex">
-                <a href="#about">About Me</a>
-            </li>
-            <li class="navButton border flex">
-                <a href="#work">Work I
-                    <br>
-                    Have Done</a>
-            </li>
-            <li class="navButton border flex">
-                <a href="#contact">Contact Information</a>
-            </li>
-        </ul>
-    </nav>
-    <header class="container flex">
-        <img class="face headerButton border flex" src="public/doug-face.jpg" />
-        <div class="name headerButton border flex"></div>
-    </header>
-    <section id="about" class="border flex">
-        <p class="flex aboutText">
+<body class="d-inline-flex flex-wrap">
+    <ul
+        class=" container-fluid p-0 navbar-nav justify-contenter-center align-self-center d-inline-flex row flex-row flex-wrap mw-100">
+        <li class="nav-item border border-warning d-inline-flex col-3">
+            <a href="#">Douglas Joseph Lubaway</a>
+        </li>
+        <li class="nav-item border border-warning d-inline-flex col-3">
+            <a href="#about">About Me</a>
+        </li>
+        <li class="nav-item border border-warning d-inline-flex col-3">
+            <a href="#work">Work I
+                <br>
+                Have Done</a>
+        </li>
+        <li class="navButton border border-warning d-inline-flex col-3">
+            <a href="#contact">Contact Information</a>
+        </li>
+    </ul>
+    <header id="about" class=" container-fluid p-0 flex-row flex-wrap d-inline-flex mw-100">
+        <img class="w-25 mb-0 img-thumbnail headerButton border border-warning d-inline-flex col-4"
+            src="public/doug-face.jpg" />
+        <p class=" d-inline-flex border border-warning p-4 col-8 aboutText m-0">
             Hello! My name is Douglas Joseph Lubaway. I am a Junior Full-Stack Web Developer with some experience in all
             sides, several projects and contributions to public projects, and beginning a Full-Stack Javascript Bootcamp
             with Michigan State University in coordination with Trinity Group.
         </p>
-    </section>
-    <section id="work" class="container border flex">
-        <div id="horiseon" class="firstWorkButton border flex">
-            <h1 class="workText">Horiseon Project</h1>
-            <br>
-            <a class="workText" href="https://github.com/hhhhhaaaa/Horiseon-SEO">Github Link</a>
-            <a class="workText" href="https://hhhhhaaaa.github.io/Horiseon-SEO/">Project Link</a>
+        <div class="name headerButton border border-warning d-inline-flex col-12"></div>
+    </header>
+    <section id="work" class=" container-fluid p-0 flex-row flex-wrap border border-warning d-inline-flex mw-100">
+        <div id="horiseon" class="firstWorkButton border border-warning  col-8"></div>
+        <div class="card-body m-0 firstWorkText border border-warning col-4">
+            <h1 class="card-title">Horiseon Project</h1>
+            <a class="card-text" href="https://github.com/hhhhhaaaa/Horiseon-SEO">Github Link</a>
+            <a class="card-text" href="https://hhhhhaaaa.github.io/Horiseon-SEO/">Project Link</a>
         </div>
-        <div id="familyJewels" class="workButton border flex">
-            <h1 class="workText">Family Jewels <br> Project</h1>
-            <a class="workText" href="https://github.com/hhhhhaaaa/FamilyJewels">Github Link</a>
-            <h1 class="workText">Project Link: n/a As Of Yet</h1>
+        <div id="familyJewels" class="workButton border border-warning col-6"></div>
+        <div class="card-body m-0 workText border border-warning col-6">
+            <h1 class="card-title">Family Jewels <br> Project</h1>
+            <a class="card-text" href="https://github.com/hhhhhaaaa/FamilyJewels">Github Link</a>
+            <h1 class="card-text">Project Link: n/a As Of Yet</h1>
         </div>
-        <div id="talent" class="workButton border flex">
-            <h1 class="workText">Talent Project</h1>
-            <a class="workText" href="https://github.com/hhhhhaaaa/talent">Github Link</a>
-            <h1 class="workText">Project Link: n/a; Side-Project, Mainly For Resources</h1>
+        <div id="talent" class="workButton border border-warning col-6"></div>
+        <div class="card-body m-0 workText border border-warning col-6">
+            <h1 class="card-title">Talent Project</h1>
+            <a class="card-text" href="https://github.com/hhhhhaaaa/talent">Github Link</a>
+            <h1 class="card-text">Project Link: n/a; Side-Project, Mainly For Resources</h1>
         </div>
     </section>
-    <section id="contact">
-        <ul class="contactBox container flex">
-            <li class="contactButton border flex">
-                <a href="douglaslubaway@gmail.com">douglaslubaway@gmail.com</a>
-            </li>
-            <li class="contactButton border flex">
-                Cell Number: (777) 777-7777
-            </li>
-            <li class="contactButton border flex">
-                GitHub:
-                <a href="https://github.com/hhhhhaaaa"> hhhhhaaaa</a>
-            </li>
-        </ul>
-    </section>
+    <ul id="contact" class="container flex-row flex-wrap mw-100 contactBox container-fluid p-0 d-inline-flex">
+        <li class="contactButton border border-warning">
+            <a href="douglaslubaway@gmail.com">douglaslubaway@gmail.com</a>
+        </li>
+        <li class="contactButton border border-warning">
+            Cell Number: (777) 777-7777
+        </li>
+        <li class="contactButton border border-warning">
+            GitHub:
+            <a href="https://github.com/hhhhhaaaa"> hhhhhaaaa</a>
+        </li>
+        <li class="contactButton border border-warning">
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/dougell/"> dougell</a>
+        </li>
 
+    </ul>
 </body>
 
 </html>
