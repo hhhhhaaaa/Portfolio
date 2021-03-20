@@ -79,6 +79,18 @@ a {
     background-color: white;
 }
 
+#project1 {
+    background-image: url("./WillWeather.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#workday {
+    background-image: url("./Planner.png");
+    background-position: center;
+    background-size: cover;
+}
+
 #horiseon {
     background-image: url("./final-image.PNG");
     background-position: center;
