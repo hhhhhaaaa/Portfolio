@@ -6,7 +6,9 @@
 html {
     scroll-behavior: smooth;
 }
-html, body {
+
+html,
+body {
     height: 100%;
 }
 
@@ -18,7 +20,7 @@ ul {
 }
 
 a {
-    color: var(--gold);
+    color: var(--gold) !important;
     text-decoration: none;
 }
 
@@ -37,7 +39,6 @@ a {
     max-width: 300px;
     min-width: 300px;
 }
-
 
 .aboutText {
     font-size: 25px;
@@ -83,16 +84,18 @@ a {
     background-image: url("./WillWeather.png");
     background-position: center;
     background-size: cover;
+    height: 300px;
 }
 
 #workday {
     background-image: url("./Planner.png");
     background-position: center;
     background-size: cover;
+    height: 147px;
 }
 
 #horiseon {
-    background-image: url("./final-image.PNG");
+    background-image: url('treatyoshelf.png');
     background-position: center;
     background-size: cover;
 }
@@ -101,12 +104,14 @@ a {
     background-image: url("./cookbook.jfif");
     background-position: center;
     background-size: cover;
+    height: 292px;
 }
 
 #talent {
     background-image: url("./lg.png");
     background-position: center;
     background-size: auto;
+    height: 291px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -117,10 +122,13 @@ a {
 
 @media only screen and (max-width: 600px) {
     .navButton {
-        width: 90%
+        width: 90%;
     }
 
     .contactButton {
         font-size: 15px;
     }
+}
+
+.nav-item {
 }
