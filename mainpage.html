@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" data-pgc-save-partial-operation="save_load" data-pgc-save-partial="C:\Users\hathe\Documents\Repos\Portfolio\src\Components\App\App.js">
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="http://localhost:3000/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#000000">
+        <meta name="description" content="Web site created using create-react-app">
+        <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+        <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+        <link rel="manifest" href="http://localhost:3000/manifest.json">
+        <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <title>React App</title>
+        <style>body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+:root {
+  --gold: #daa520;
+  --black: #000000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+ul {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  background: var(--black);
+  color: var(--gold);
+}
+
+a {
+  color: var(--gold) !important;
+  text-decoration: none;
+}
+
+.container {
+  list-style: none;
+  min-height: 100px;
+}
+
+.navButton {
+  width: 20%;
+  height: 150px;
+  border-style: dashed dashed solid dashed;
+}
+
+.face {
+  max-width: 300px;
+  min-width: 300px;
+}
+
+.aboutText {
+  font-size: 25px;
+}
+
+.firstWorkButton {
+  height: 500px;
+  width: 50%;
+}
+
+.workButton {
+  height: 150px;
+  width: 45%;
+}
+
+.contactButton {
+  height: 150px;
+  width: 25%;
+  font-size: 20px;
+}
+
+.name {
+  width: 75%;
+  font-size: 75px;
+  height: 250px;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(218, 165, 32, 1) 100%
+  );
+}
+
+.firstWorkText {
+  height: 300px;
+  font-size: 30px;
+  margin: 10px;
+  background-color: white;
+}
+
+.workText {
+  font-size: 30px;
+  margin: 10px;
+  background-color: white;
+}
+
+#willWeather {
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+
+#workday {
+  background-position: center;
+  background-size: cover;
+  height: 147px;
+}
+
+#treat-yo-shelf {
+  background-position: center;
+  background-size: cover;
+}
+
+#hearthLibrary {
+  background-position: center;
+  background-size: cover;
+  height: 292px;
+}
+
+#talent {
+  background-position: center;
+  background-size: auto;
+  height: 291px;
+}
+
+#employeeDirectory {
+  background-position: center;
+  background-size: auto;
+  height: 291px;
+}
+
+@media only screen and (max-width: 800px) {
+  .navButton {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navButton {
+    width: 90%;
+  }
+
+  .contactButton {
+    font-size: 15px;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvaW5kZXguY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsU0FBUztFQUNUOztjQUVZO0VBQ1osbUNBQW1DO0VBQ25DLGtDQUFrQztBQUNwQzs7QUFFQTtFQUNFO2FBQ1c7QUFDYjs7QUFFQTtFQUNFLGVBQWU7RUFDZixnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSx1QkFBdUI7QUFDekI7O0FBRUE7O0VBRUUsWUFBWTtBQUNkOztBQUVBO0VBQ0UsZ0RBQWdEO0VBQ2hELGVBQWU7RUFDZix3QkFBd0I7RUFDeEIsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsNkJBQTZCO0VBQzdCLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixpQkFBaUI7QUFDbkI7O0FBRUE7RUFDRSxVQUFVO0VBQ1YsYUFBYTtFQUNiLHdDQUF3QztBQUMxQzs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLFVBQVU7QUFDWjs7QUFFQTtFQUNFLGFBQWE7RUFDYixVQUFVO0FBQ1o7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsVUFBVTtFQUNWLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxVQUFVO0VBQ1YsZUFBZTtFQUNmLGFBQWE7RUFDYjs7OztHQUlDO0FBQ0g7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsZUFBZTtFQUNmLFlBQVk7RUFDWix1QkFBdUI7QUFDekI7O0FBRUE7RUFDRSxlQUFlO0VBQ2YsWUFBWTtFQUNaLHVCQUF1QjtBQUN6Qjs7QUFFQTtFQUNFLDJCQUEyQjtFQUMzQixzQkFBc0I7RUFDdEIsYUFBYTtBQUNmOztBQUVBO0VBQ0UsMkJBQTJCO0VBQzNCLHNCQUFzQjtFQUN0QixhQUFhO0FBQ2Y7O0FBRUE7RUFDRSwyQkFBMkI7RUFDM0Isc0JBQXNCO0FBQ3hCOztBQUVBO0VBQ0UsMkJBQTJCO0VBQzNCLHNCQUFzQjtFQUN0QixhQUFhO0FBQ2Y7O0FBRUE7RUFDRSwyQkFBMkI7RUFDM0IscUJBQXFCO0VBQ3JCLGFBQWE7QUFDZjs7QUFFQTtFQUNFLDJCQUEyQjtFQUMzQixxQkFBcUI7RUFDckIsYUFBYTtBQUNmOztBQUVBO0VBQ0U7SUFDRSxVQUFVO0VBQ1o7QUFDRjs7QUFFQTtFQUNFO0lBQ0UsVUFBVTtFQUNaOztFQUVBO0lBQ0UsZUFBZTtFQUNqQjtBQUNGIiwic291cmNlc0NvbnRlbnQiOlsiYm9keSB7XG4gIG1hcmdpbjogMDtcbiAgZm9udC1mYW1pbHk6IC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgXCJTZWdvZSBVSVwiLCBcIlJvYm90b1wiLCBcIk94eWdlblwiLFxuICAgIFwiVWJ1bnR1XCIsIFwiQ2FudGFyZWxsXCIsIFwiRmlyYSBTYW5zXCIsIFwiRHJvaWQgU2Fuc1wiLCBcIkhlbHZldGljYSBOZXVlXCIsXG4gICAgc2Fucy1zZXJpZjtcbiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XG4gIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XG59XG5cbmNvZGUge1xuICBmb250LWZhbWlseTogc291cmNlLWNvZGUtcHJvLCBNZW5sbywgTW9uYWNvLCBDb25zb2xhcywgXCJDb3VyaWVyIE5ld1wiLFxuICAgIG1vbm9zcGFjZTtcbn1cblxuOnJvb3Qge1xuICAtLWdvbGQ6ICNkYWE1MjA7XG4gIC0tYmxhY2s6ICMwMDAwMDA7XG59XG5cbmh0bWwge1xuICBzY3JvbGwtYmVoYXZpb3I6IHNtb290aDtcbn1cblxuaHRtbCxcbmJvZHkge1xuICBoZWlnaHQ6IDEwMCU7XG59XG5cbnVsIHtcbiAgZm9udC1mYW1pbHk6IFZlcmRhbmEsIEdlbmV2YSwgVGFob21hLCBzYW5zLXNlcmlmO1xuICBmb250LXNpemU6IDMwcHg7XG4gIGJhY2tncm91bmQ6IHZhcigtLWJsYWNrKTtcbiAgY29sb3I6IHZhcigtLWdvbGQpO1xufVxuXG5hIHtcbiAgY29sb3I6IHZhcigtLWdvbGQpICFpbXBvcnRhbnQ7XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbn1cblxuLmNvbnRhaW5lciB7XG4gIGxpc3Qtc3R5bGU6IG5vbmU7XG4gIG1pbi1oZWlnaHQ6IDEwMHB4O1xufVxuXG4ubmF2QnV0dG9uIHtcbiAgd2lkdGg6IDIwJTtcbiAgaGVpZ2h0OiAxNTBweDtcbiAgYm9yZGVyLXN0eWxlOiBkYXNoZWQgZGFzaGVkIHNvbGlkIGRhc2hlZDtcbn1cblxuLmZhY2Uge1xuICBtYXgtd2lkdGg6IDMwMHB4O1xuICBtaW4td2lkdGg6IDMwMHB4O1xufVxuXG4uYWJvdXRUZXh0IHtcbiAgZm9udC1zaXplOiAyNXB4O1xufVxuXG4uZmlyc3RXb3JrQnV0dG9uIHtcbiAgaGVpZ2h0OiA1MDBweDtcbiAgd2lkdGg6IDUwJTtcbn1cblxuLndvcmtCdXR0b24ge1xuICBoZWlnaHQ6IDE1MHB4O1xuICB3aWR0aDogNDUlO1xufVxuXG4uY29udGFjdEJ1dHRvbiB7XG4gIGhlaWdodDogMTUwcHg7XG4gIHdpZHRoOiAyNSU7XG4gIGZvbnQtc2l6ZTogMjBweDtcbn1cblxuLm5hbWUge1xuICB3aWR0aDogNzUlO1xuICBmb250LXNpemU6IDc1cHg7XG4gIGhlaWdodDogMjUwcHg7XG4gIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudChcbiAgICA0NWRlZyxcbiAgICByZ2JhKDAsIDAsIDAsIDEpIDAlLFxuICAgIHJnYmEoMjE4LCAxNjUsIDMyLCAxKSAxMDAlXG4gICk7XG59XG5cbi5maXJzdFdvcmtUZXh0IHtcbiAgaGVpZ2h0OiAzMDBweDtcbiAgZm9udC1zaXplOiAzMHB4O1xuICBtYXJnaW46IDEwcHg7XG4gIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xufVxuXG4ud29ya1RleHQge1xuICBmb250LXNpemU6IDMwcHg7XG4gIG1hcmdpbjogMTBweDtcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG59XG5cbiN3aWxsV2VhdGhlciB7XG4gIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgaGVpZ2h0OiAzMDBweDtcbn1cblxuI3dvcmtkYXkge1xuICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gIGhlaWdodDogMTQ3cHg7XG59XG5cbiN0cmVhdC15by1zaGVsZiB7XG4gIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgYmFja2dyb3VuZC1zaXplOiBjb3Zlcjtcbn1cblxuI2hlYXJ0aExpYnJhcnkge1xuICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gIGhlaWdodDogMjkycHg7XG59XG5cbiN0YWxlbnQge1xuICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gIGJhY2tncm91bmQtc2l6ZTogYXV0bztcbiAgaGVpZ2h0OiAyOTFweDtcbn1cblxuI2VtcGxveWVlRGlyZWN0b3J5IHtcbiAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xuICBiYWNrZ3JvdW5kLXNpemU6IGF1dG87XG4gIGhlaWdodDogMjkxcHg7XG59XG5cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogODAwcHgpIHtcbiAgLm5hdkJ1dHRvbiB7XG4gICAgd2lkdGg6IDQwJTtcbiAgfVxufVxuXG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDYwMHB4KSB7XG4gIC5uYXZCdXR0b24ge1xuICAgIHdpZHRoOiA5MCU7XG4gIH1cblxuICAuY29udGFjdEJ1dHRvbiB7XG4gICAgZm9udC1zaXplOiAxNXB4O1xuICB9XG59XG4iXSwic291cmNlUm9vdCI6IiJ9 */</style>
+        <style>.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvQ29tcG9uZW50cy9BcHAvQXBwLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxvQkFBb0I7QUFDdEI7O0FBRUE7RUFDRTtJQUNFLDRDQUE0QztFQUM5QztBQUNGOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLGlCQUFpQjtFQUNqQixhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLG1CQUFtQjtFQUNuQix1QkFBdUI7RUFDdkIsNkJBQTZCO0VBQzdCLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRTtJQUNFLHVCQUF1QjtFQUN6QjtFQUNBO0lBQ0UseUJBQXlCO0VBQzNCO0FBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyIuQXBwIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4uQXBwLWxvZ28ge1xuICBoZWlnaHQ6IDQwdm1pbjtcbiAgcG9pbnRlci1ldmVudHM6IG5vbmU7XG59XG5cbkBtZWRpYSAocHJlZmVycy1yZWR1Y2VkLW1vdGlvbjogbm8tcHJlZmVyZW5jZSkge1xuICAuQXBwLWxvZ28ge1xuICAgIGFuaW1hdGlvbjogQXBwLWxvZ28tc3BpbiBpbmZpbml0ZSAyMHMgbGluZWFyO1xuICB9XG59XG5cbi5BcHAtaGVhZGVyIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzI4MmMzNDtcbiAgbWluLWhlaWdodDogMTAwdmg7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBmb250LXNpemU6IGNhbGMoMTBweCArIDJ2bWluKTtcbiAgY29sb3I6IHdoaXRlO1xufVxuXG4uQXBwLWxpbmsge1xuICBjb2xvcjogIzYxZGFmYjtcbn1cblxuQGtleWZyYW1lcyBBcHAtbG9nby1zcGluIHtcbiAgZnJvbSB7XG4gICAgdHJhbnNmb3JtOiByb3RhdGUoMGRlZyk7XG4gIH1cbiAgdG8ge1xuICAgIHRyYW5zZm9ybTogcm90YXRlKDM2MGRlZyk7XG4gIH1cbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style>
+        <link rel="stylesheet" href="custom.css">
+    </head>
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root">
+            <div class="App">
+                <div>
+                    <ul class=" container-fluid p-0 navbar-nav justify-contenter-center align-self-center d-inline-flex row flex-row flex-wrap mw-100 ">
+                        <li class="nav-item border border-warning d-inline-flex col-3">
+                            <a href="http://localhost:3000/">Douglas Joseph Lubaway</a>
+                        </li>
+                        <li class="nav-item border border-warning d-inline-flex col-3">
+                            <a href="http://localhost:3000/#about">About Me</a>
+                        </li>
+                        <li class="nav-item border border-warning d-inline-flex col-3">
+                            <a href="http://localhost:3000/#work">Work I <br>Have Done</a>
+                        </li>
+                        <li class="navButton nav-item border border-warning d-inline-flex col-3">
+                            <a href="http://localhost:3000/#contact">Contact Information</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <header id="about" class="container-fluid p-0 flex-row flex-wrap d-inline-flex mw-100">
+                        <img class=" w-25 mb-0 img-thumbnail headerButton border border-warning d-inline-flex col-4 " src="http://localhost:3000/doug-face.jpg">
+                        <p class="aboutText border border-warning col-8 d-inline-flex m-0 p-4">Hello! My name is Douglas Joseph Lubaway. I am a Junior Full-Stack Web Developer with some experience in all sides, several projects and contributions to public projects, and beginning a Full-Stack Javascript Bootcamp with Michigan State University in coordination with Trinity Group. </p>
+                        <div class="name headerButton border border-warning d-inline-flex col-12"></div>
+                    </header>
+                </div>
+                <div id="work" class="col-12 container row justify-content-center">
+                    <div id="willWeather" class="firstWorkButton border border-warning col-12 row">
+                        <img class=" border border-warning d-inline-flex col-4 flex-fill " src="http://localhost:3000/willWeather.png">
+                        <div class="card-body m-0 firstWorkText border border-warning col-8">
+                            <h1 class="card-title">Will Weather Project</h1>
+                            <a class="card-text" href="https://github.com/hhhhhaaaa/willWeather">Github Link</a>
+                            <a class="card-text" href="https://hhhhhaaaa.github.io/WillWeather/">Project Link</a>
+                        </div>
+                    </div>
+                    <div id="workday" class="firstWorkButton border border-warning col-12 row">
+                        <img class=" border border-warning d-inline-flex col-4 flex-fill " src="http://localhost:3000/workday.png">
+                        <div class="card-body m-0 firstWorkText border border-warning col-8">
+                            <h1 class="card-title">Workday Scheduler</h1>
+                            <a class="card-text" href="https://github.com/hhhhhaaaa/workday">Github Link</a>
+                            <a class="card-text" href="https://hhhhhaaaa.github.io/WorkDayScheduler/">Project Link</a>
+                        </div>
+                    </div>
+                    <div id="treat-yo-shelf" class="firstWorkButton border border-warning col-12 row">
+                        <img class=" border border-warning d-inline-flex col-4 flex-fill " src="http://localhost:3000/treat-yo-shelf.png">
+                        <div class="card-body m-0 firstWorkText border border-warning col-8">
+                            <h1 class="card-title">Treat Yo Shelf</h1>
+                            <a class="card-text" href="https://github.com/hhhhhaaaa/treat-yo-shelf">Github Link</a>
+                            <a class="card-text" href="https://treatyourshelf.herokuapp.com/">Project Link</a>
+                        </div>
+                    </div>
+                    <div id="hearthLibrary" class="firstWorkButton border border-warning col-12 row">
+                        <img class=" border border-warning d-inline-flex col-4 flex-fill " src="http://localhost:3000/hearthLibrary.png">
+                        <div class="card-body m-0 firstWorkText border border-warning col-8">
+                            <h1 class="card-title">Hearth Library</h1>
+                            <a class="card-text" href="https://github.com/hhhhhaaaa/hearthLibrary">Github Link</a>
+                            <a class="card-text" href="https://hearth-library.herokuapp.com/">Project Link</a>
+                        </div>
+                    </div>
+                    <div id="talent" class="firstWorkButton border border-warning col-12 row">
+                        <img class=" border border-warning d-inline-flex col-4 flex-fill " src="http://localhost:3000/talent.png">
+                        <div class="card-body m-0 firstWorkText border border-warning col-8">
+                            <h1 class="card-title">Talent Project</h1>
+                            <a class="card-text" href="https://github.com/hhhhhaaaa/talent">Github Link</a>
+                            <a class="card-text" href="">Project Link</a>
+                        </div>
+                    </div>
+                    <div id="EmployeeDirectory" class="firstWorkButton border border-warning col-12 row">
+                        <img class=" border border-warning d-inline-flex col-4 flex-fill " src="http://localhost:3000/EmployeeDirectory.png">
+                        <div class="card-body m-0 firstWorkText border border-warning col-8">
+                            <h1 class="card-title">Employee Directory</h1>
+                            <a class="card-text" href="https://github.com/hhhhhaaaa/EmployeeDirectory">Github Link</a>
+                            <a class="card-text" href="https://hhhhhaaaa.github.io/EmployeeDirectory/">Project Link</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <ul id="contact" class=" container flex-row flex-wrap mw-100 contactBox container-fluid p-0 d-inline-flex ">
+                        <li class="contactButton border border-warning">
+                            <a href="http://localhost:3000/douglaslubaway@gmail.com">douglaslubaway<br>@gmail.com</a>
+                            <br>
+                            <a href="https://docs.google.com/document/d/1K9-LH3UansznQKObpJ6a5VTqKKnrOrByB2lf2-WUukg/edit?usp=sharing">Resume Link</a>
+                        </li>
+                        <li class="contactButton border border-warning">Cell Number: (734) 778-3213</li>
+                        <li class="contactButton border border-warning">GitHub:
+                            <a href="https://github.com/hhhhhaaaa"> hhhhhaaaa</a>
+                        </li>
+                        <li class="contactButton border border-warning">LinkedIn:
+                            <a href="https://www.linkedin.com/in/dougell/"> dougell</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    </body>
+</html>
