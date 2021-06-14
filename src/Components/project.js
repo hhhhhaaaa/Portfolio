@@ -12,7 +12,7 @@ export default function project(props) {
           d-inline-flex
           col-4
         "
-        src={"./Portfolio/" + props.title + ".png"}
+        src={props.title + ".png"}
       />
       <div class="card-body m-0 firstWorkText border border-warning col-8">
         <h1 class="card-title">{props.name}</h1>
