@@ -12,7 +12,7 @@ export default function project(props) {
           d-inline-flex
           col-4
         "
-        src={props.title + ".png"}
+        src={"./Portfolio/" + props.title + ".png"}
       />
       <div class="card-body m-0 firstWorkText border border-warning col-8">
         <h1 class="card-title">{props.name}</h1>
@@ -20,7 +20,7 @@ export default function project(props) {
           class="card-text"
           href={`https://github.com/hhhhhaaaa/${props.title}`}
         >
-          Github Linkq
+          Github Link
         </a>
         <br />
         <a class="card-text" href={props.link}>

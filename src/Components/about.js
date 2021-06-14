@@ -17,7 +17,7 @@ export default function about() {
           d-inline-flex
           col-4
         "
-          src="./doug-face.jpg"
+          src="./Portfolio/doug-face.jpg"
         />
         <p class="aboutText border border-warning col-8 d-inline-flex m-0 p-4">
           Hello! My name is Douglas Joseph Lubaway. I am a Junior Full-Stack Web
